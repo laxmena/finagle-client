@@ -7,7 +7,24 @@ import com.twitter.util.{Await, Future}
 /**
  * FinagleClient
  *
- * HTTP Client service that gets inputs from the user and invoke AWS Lambda Function, built using Finagle.
+ * Accepts the input from the user and invokes the AWS Lambda Function.
+ * LogQueryREST Lambda function is invoked.
+ *
+ * List of arguments:
+ * <li>
+ * <ul> args(0) => date: String (YYYY-MM-DD) </ul>
+ * <ul> args(1) => time: String (HH:MM:SS) </ul>
+ * <ul> args(2) => window: Int (in minutes) </ul>
+ * </li>
+ *
+ * Functionality:
+ * - Validates the input arguments
+ * - Invokes the LogQueryREST Lambda function
+ * - Lambda checks the logs for the given date, time, window and search pattern.
+ * - Prints the response
+ *
+ * How to run:
+ * sbt "run-main com.laxmena.FinagleClient [date] [time] [window]"
  *
  * @author Laxmena
  */
@@ -20,27 +37,7 @@ object FinagleClient {
         case None => throw new Exception(Constants.CONFIG_NOT_FOUND)
     }
 
-    /**
-     * main invoke method
-     * Accepts the input from the user and invokes the AWS Lambda Function.
-     * LogQueryREST Lambda function is invoked.
-     *
-     * List of arguments:
-     * - args(0) => date: String (YYYY-MM-DD)
-     * - args(1) => time: String (HH:MM:SS)
-     * - args(2) => window: Int (in minutes)
-     *
-     * Functionality:
-     * - Validates the input arguments
-     * - Invokes the LogQueryREST Lambda function
-     * - Lambda checks the logs for the given date, time, window and search pattern.
-     * - Prints the response
-     *
-     * How to run:
-     * sbt "run-main com.laxmena.FinagleClient [date] [time] [window]"
-     *
-     * @param args
-     */
+
     def main(args: Array[String]) {
 
         // If the number of arguments are not 3, Exit the program

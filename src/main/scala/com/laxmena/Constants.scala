@@ -1,5 +1,10 @@
 package com.laxmena
 
+/**
+ * Constants
+ *
+ * Contains all the constants used in the application
+ */
 object Constants {
   val APP_NAME = "finagle-client"
   val APP_VERSION = "0.1"

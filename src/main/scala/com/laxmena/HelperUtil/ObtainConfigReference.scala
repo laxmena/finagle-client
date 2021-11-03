@@ -4,6 +4,11 @@ import com.typesafe.config.{Config, ConfigFactory}
 
 import scala.util.{Failure, Success, Try}
 
+/**
+ * ObtainConfigReference
+ *
+ * Helper Util to get the reference of the config file
+ */
 class ObtainConfigReference
 object ObtainConfigReference {
   private val config = ConfigFactory.load()
