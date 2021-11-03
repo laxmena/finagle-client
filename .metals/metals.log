@@ -1,0 +1,1610 @@
+[0m2021.10.30 17:45:15 INFO  Started: Metals version 0.10.8 in workspace 'D:\Academics\Semester2\CS441\Reference\finagle-client' for client Visual Studio Code 1.61.2.[0m
+[0m2021.10.30 17:45:21 INFO  time: initialize in 6.5s[0m
+[0m2021.10.30 17:45:24 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.30 17:45:24 WARN  no build target for: D:\Academics\Semester2\CS441\Reference\finagle-client\build.sbt[0m
+[0m2021.10.30 17:45:37 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.10.30 17:45:44 INFO  time: code lens generation in 20s[0m
+[0m2021.10.30 17:45:44 INFO  time: code lens generation in 2.85s[0m
+[0m2021.10.30 17:46:07 WARN  no build target for: D:\Academics\Semester2\CS441\Reference\finagle-client\build.sbt[0m
+[0m2021.10.30 17:46:11 INFO  running 'C:\Program Files\Java\jdk-11.0.12\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\laksh\AppData\Local\Temp\metals10083429610882680779\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.10.30 17:46:18 INFO  [info] welcome to sbt 1.5.5 (Oracle Corporation Java 11.0.12)[0m
+[0m2021.10.30 17:46:23 INFO  [info] loading global plugins from C:\Users\laksh\.sbt\1.0\plugins[0m
+[0m2021.10.30 17:46:34 INFO  [info] loading settings for project finagle-client-build-build from metals.sbt ...[0m
+[0m2021.10.30 17:46:34 INFO  [info] loading project definition from D:\Academics\Semester2\CS441\Reference\finagle-client\project\project[0m
+[0m2021.10.30 17:46:34 WARN  no build target for: D:\Academics\Semester2\CS441\Reference\finagle-client\src\main\scala\Main.scala[0m
+[0m2021.10.30 17:46:45 INFO  [info] loading settings for project finagle-client-build from metals.sbt ...[0m
+[0m2021.10.30 17:46:45 INFO  [info] loading project definition from D:\Academics\Semester2\CS441\Reference\finagle-client\project[0m
+[0m2021.10.30 17:46:58 INFO  [success] Generated .bloop\finagle-client-build.json[0m
+[0m2021.10.30 17:46:58 INFO  [success] Total time: 12 s, completed Oct 30, 2021, 5:46:58 PM[0m
+[0m2021.10.30 17:47:04 INFO  [info] loading settings for project finagle-client from build.sbt ...[0m
+[0m2021.10.30 17:47:04 INFO  [info] set current project to hello-world (in build file:/D:/Academics/Semester2/CS441/Reference/finagle-client/)[0m
+Oct 30, 2021 5:47:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 14 is not a valid line number, allowed [0..7]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1554)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1553)
+	... 16 more
+
+[0m2021.10.30 17:47:17 INFO  [success] Generated .bloop\finagle-client-test.json[0m
+[0m2021.10.30 17:47:17 INFO  [success] Generated .bloop\finagle-client.json[0m
+[0m2021.10.30 17:47:17 INFO  [success] Total time: 13 s, completed Oct 30, 2021, 5:47:17 PM[0m
+[0m2021.10.30 17:47:18 INFO  time: ran 'sbt bloopInstall' in 1m6s[0m
+[0m2021.10.30 17:47:18 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 34248'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.10-8-8d1cbc4f...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading 2 projects from 'd:\Academics\Semester2\CS441\Reference\finagle-client\.bloop'...
+[0m[32m[D][0m Loading project from 'd:\Academics\Semester2\CS441\Reference\finagle-client\.bloop\finagle-client.json'
+[0m[32m[D][0m Loading project from 'd:\Academics\Semester2\CS441\Reference\finagle-client\.bloop\finagle-client-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+[0m[32m[D][0m   => C:\Users\laksh\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.3.1\jna-5.3.1.jar
+[0m[32m[D][0m   => C:\Users\laksh\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline\3.15.0\jline-3.15.0.jar
+[0m[32m[D][0m   => C:\Users\laksh\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-compiler\2.13.3\scala-compiler-2.13.3.jar
+[0m[32m[D][0m   => C:\Users\laksh\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.3\scala-library-2.13.3.jar
+[0m[32m[D][0m   => C:\Users\laksh\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.13.3\scala-reflect-2.13.3.jar
+[0m[32m[D][0m Missing analysis file for project 'finagle-client-test'
+[0m[32m[D][0m Missing analysis file for project 'finagle-client'
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:34248...
+The server is listening for incoming connections at tcp://127.0.0.1:34248...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.30 17:47:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\laksh\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.30 17:47:55 WARN  no build target for: D:\Academics\Semester2\CS441\Reference\finagle-client\src\main\scala\Main.scala[0m
+[0m2021.10.30 17:47:57 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 23738'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:23738...
+The server is listening for incoming connections at tcp://127.0.0.1:23738...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.30 17:47:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\laksh\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.30 17:48:02 INFO  time: Connected to build server in 43s[0m
+[0m2021.10.30 17:48:02 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.10.30 17:48:02 INFO  time: Imported build in 0.7s[0m
+[0m2021.10.30 17:48:10 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.10.30 17:48:13 ERROR code navigation does not work for the file 'D:\Academics\Semester2\CS441\Reference\finagle-client\src\main\scala\Main.scala' because the build target finagle-client is being compiled. Wait until compilation is finished and try again.[0m
+[0m2021.10.30 17:48:17 INFO  compiling finagle-client (1 scala source)[0m
+Oct 30, 2021 5:48:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 126
+[0m2021.10.30 17:48:28 INFO  time: indexed workspace in 26s[0m
+[0m2021.10.30 17:48:29 INFO  Deduplicating compilation of finagle-client from bsp client 'Metals 0.10.8' (since 39.115s)[0m
+[0m2021.10.30 17:48:29 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 17:48:36 INFO  no build target: using presentation compiler with only scala-library: 2.13.3[0m
+Oct 30, 2021 5:48:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 145
+Oct 30, 2021 5:48:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 149
+Oct 30, 2021 5:48:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 146
+Oct 30, 2021 5:48:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 152
+Oct 30, 2021 5:48:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 155
+[0m2021.10.30 17:48:59 INFO  time: compiled finagle-client in 30s[0m
+[0m2021.10.30 17:48:59 WARN  Disconnecting from deduplication of ongoing compilation for 'finagle-client'
+No progress update for 30 seconds caused bloop to cancel compilation and schedule a new compile.
+                  [0m
+[0m2021.10.30 17:48:59 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 17:49:04 INFO  time: compiled finagle-client in 4.79s[0m
+Oct 30, 2021 5:49:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 5:49:33 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 5:49:34 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 5:49:51 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 5:49:52 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 17:49:58 INFO  compiling finagle-client (1 scala source)[0m
+Oct 30, 2021 5:49:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 218
+[0m2021.10.30 17:50:02 INFO  time: compiled finagle-client in 4.14s[0m
+[0m2021.10.30 17:50:07 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 17:50:08 INFO  time: compiled finagle-client in 1.66s[0m
+Oct 30, 2021 5:50:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 376
+Oct 30, 2021 5:51:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 7 is not a valid line number, allowed [0..6]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.lineLength$1(Position.scala:57)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:60)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1554)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1553)
+	... 15 more
+
+Oct 30, 2021 5:51:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 12 is not a valid line number, allowed [0..6]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1554)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1553)
+	... 15 more
+
+Oct 30, 2021 5:51:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 12 is not a valid line number, allowed [0..6]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1554)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1553)
+	... 15 more
+
+Oct 30, 2021 5:51:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 13 is not a valid line number, allowed [0..6]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1554)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1553)
+	... 15 more
+
+Oct 30, 2021 5:51:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 14 is not a valid line number, allowed [0..6]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:133)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:77)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:76)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:62)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:61)
+	at scala.collection.immutable.List.collect(List.scala:323)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:61)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1554)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1553)
+	... 15 more
+
+[0m2021.10.30 17:51:30 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 17:51:30 INFO  time: compiled finagle-client in 0.95s[0m
+Oct 30, 2021 5:51:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 432
+Oct 30, 2021 5:51:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 433
+[0m2021.10.30 17:51:33 INFO  compiling finagle-client (2 scala sources)[0m
+Oct 30, 2021 5:51:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 438
+[0m2021.10.30 17:51:33 INFO  time: compiled finagle-client in 0.74s[0m
+[0m2021.10.30 17:51:36 INFO  compiling finagle-client (2 scala sources)[0m
+[0m2021.10.30 17:51:36 INFO  time: compiled finagle-client in 0.78s[0m
+[0m2021.10.30 17:51:50 INFO  compiling finagle-client (2 scala sources)[0m
+[0m2021.10.30 17:51:53 INFO  time: compiled finagle-client in 3.17s[0m
+Oct 30, 2021 5:55:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 487
+Oct 30, 2021 5:55:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 488
+Oct 30, 2021 5:55:46 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 5:55:47 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 5:55:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 5:56:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 496
+Oct 30, 2021 5:56:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 497
+Oct 30, 2021 5:56:20 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 5:56:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 506
+Oct 30, 2021 5:56:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 507
+Oct 30, 2021 5:57:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 513
+Oct 30, 2021 5:57:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 521
+[0m2021.10.30 17:59:19 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 17:59:23 INFO  time: compiled finagle-client in 3.37s[0m
+Oct 30, 2021 5:59:31 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 5:59:33 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 5:59:35 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 17:59:40 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 17:59:43 INFO  time: compiled finagle-client in 2.79s[0m
+Oct 30, 2021 5:59:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 617
+Oct 30, 2021 5:59:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 618
+Oct 30, 2021 6:00:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 624
+[0m2021.10.30 18:00:32 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 18:00:35 INFO  time: compiled finagle-client in 3.45s[0m
+Oct 30, 2021 6:02:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:02:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:02:57 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:02:58 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 18:03:01 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 18:03:04 INFO  time: compiled finagle-client in 2.92s[0m
+Oct 30, 2021 6:03:10 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:03:20 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:03:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 18:03:32 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 18:03:35 INFO  time: compiled finagle-client in 3.35s[0m
+Oct 30, 2021 6:04:54 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:04:54 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 18:04:55 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 18:04:58 INFO  time: compiled finagle-client in 3.03s[0m
+Oct 30, 2021 6:06:45 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:06:46 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:06:46 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:06:47 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 18:08:23 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 18:08:26 INFO  time: compiled finagle-client in 3.16s[0m
+Oct 30, 2021 6:10:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:10:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:10:49 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:10:51 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 18:10:55 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 18:10:58 INFO  time: compiled finagle-client in 2.35s[0m
+Oct 30, 2021 6:11:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:14:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:14:11 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 18:14:14 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 18:14:17 INFO  time: compiled finagle-client in 2.7s[0m
+Oct 30, 2021 6:14:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:14:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:14:29 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:14:30 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:15:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:15:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 832
+[0m2021.10.30 18:15:27 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 18:15:30 INFO  time: compiled finagle-client in 2.48s[0m
+Oct 30, 2021 6:16:39 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:17:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:17:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:17:35 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:17:35 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:17:38 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:17:38 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 18:17:40 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 18:17:42 INFO  time: compiled finagle-client in 2.5s[0m
+Oct 30, 2021 6:18:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:18:27 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:18:46 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:18:47 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:18:49 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:18:52 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:19:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:19:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:19:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:19:37 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:19:37 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 18:19:39 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 18:19:42 INFO  time: compiled finagle-client in 2.76s[0m
+[0m2021.10.30 18:20:39 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 18:20:43 INFO  time: compiled finagle-client in 3.05s[0m
+Oct 30, 2021 6:20:46 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:20:46 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:20:47 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:22:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:22:20 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:22:20 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 18:24:38 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 18:24:41 INFO  time: compiled finagle-client in 2.46s[0m
+[0m2021.10.30 18:28:53 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 18:28:53 INFO  time: compiled finagle-client in 0.62s[0m
+Oct 30, 2021 6:29:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1114
+Oct 30, 2021 6:40:10 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 6:40:11 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:49:59 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:50:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1551
+Oct 30, 2021 7:50:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:50:10 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:50:10 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 19:50:13 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 19:50:16 INFO  time: compiled finagle-client in 2.23s[0m
+Oct 30, 2021 7:50:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1593
+Oct 30, 2021 7:51:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:51:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:51:10 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 19:51:28 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 19:51:30 INFO  time: compiled finagle-client in 2.06s[0m
+[0m2021.10.30 19:51:45 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 19:51:49 INFO  time: compiled finagle-client in 3.91s[0m
+Oct 30, 2021 7:52:17 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:52:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 19:52:21 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 19:52:23 INFO  time: compiled finagle-client in 2.64s[0m
+Oct 30, 2021 7:52:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:52:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:52:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:52:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:52:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:53:04 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:53:05 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:53:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1729
+[0m2021.10.30 19:53:21 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 19:53:24 INFO  time: compiled finagle-client in 2.42s[0m
+Oct 30, 2021 7:53:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:53:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:53:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:54:20 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:54:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 19:54:22 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 19:54:25 INFO  time: compiled finagle-client in 2.99s[0m
+Oct 30, 2021 7:55:41 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 19:55:53 INFO  compiling finagle-client (1 scala source)[0m
+Oct 30, 2021 7:55:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 19:55:55 INFO  time: compiled finagle-client in 1.93s[0m
+Oct 30, 2021 7:55:56 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:55:56 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:55:57 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 19:56:00 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 19:56:04 INFO  time: compiled finagle-client in 3.29s[0m
+[0m2021.10.30 19:57:42 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 19:57:45 INFO  time: compiled finagle-client in 2.53s[0m
+Oct 30, 2021 7:57:59 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:58:02 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:58:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:58:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:58:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:58:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:58:27 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 19:58:49 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 19:58:51 INFO  time: compiled finagle-client in 2.6s[0m
+[0m2021.10.30 19:59:27 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 19:59:31 INFO  time: compiled finagle-client in 3.76s[0m
+Oct 30, 2021 7:59:50 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:59:50 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 7:59:51 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 20:00:48 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 20:00:50 INFO  time: compiled finagle-client in 2.82s[0m
+[0m2021.10.30 20:01:53 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 20:01:56 INFO  time: compiled finagle-client in 2.69s[0m
+Oct 30, 2021 8:03:41 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 8:03:41 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 20:03:54 INFO  compiling finagle-client (1 scala source)[0m
+Oct 30, 2021 8:03:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 8:03:56 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 20:03:56 INFO  time: compiled finagle-client in 2.25s[0m
+[0m2021.10.30 20:03:59 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 20:04:03 INFO  time: compiled finagle-client in 3.6s[0m
+Oct 30, 2021 8:06:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 20:06:43 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 20:06:46 INFO  time: compiled finagle-client in 3.4s[0m
+Oct 30, 2021 8:07:46 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 8:08:46 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 8:08:47 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 20:08:50 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 20:08:53 INFO  time: compiled finagle-client in 3s[0m
+[0m2021.10.30 20:10:04 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 20:10:07 INFO  time: compiled finagle-client in 3.04s[0m
+[0m2021.10.30 20:11:36 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 20:11:39 INFO  time: compiled finagle-client in 2.23s[0m
+[0m2021.10.30 20:12:27 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 20:12:27 INFO  time: compiled finagle-client in 0.47s[0m
+Oct 30, 2021 8:12:38 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 20:12:44 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 20:12:47 INFO  time: compiled finagle-client in 3.22s[0m
+[0m2021.10.30 20:13:29 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 20:13:32 INFO  time: compiled finagle-client in 2.92s[0m
+Oct 30, 2021 8:13:54 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 20:14:30 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 20:14:32 INFO  time: compiled finagle-client in 1.62s[0m
+Oct 30, 2021 8:15:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 8:15:15 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 8:15:15 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 8:15:16 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 8:15:17 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 8:15:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 8:15:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 8:15:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 8:15:22 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Oct 30, 2021 8:16:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 20:16:32 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 20:16:35 INFO  time: compiled finagle-client in 2.35s[0m
+Oct 30, 2021 8:27:29 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.10.30 20:29:07 INFO  shutting down Metals[0m
+[0m2021.10.30 20:29:07 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.10.30 20:29:07 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.10.30 21:22:40 INFO  Started: Metals version 0.10.8 in workspace 'D:\Academics\Semester2\CS441\Reference\finagle-client' for client Visual Studio Code 1.61.2.[0m
+[0m2021.10.30 21:22:46 INFO  time: initialize in 6.58s[0m
+[0m2021.10.30 21:22:48 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.30 21:22:49 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 16364'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:16364...
+The server is listening for incoming connections at tcp://127.0.0.1:16364...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.30 21:22:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\laksh\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.30 21:22:53 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 39958'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:39958...
+The server is listening for incoming connections at tcp://127.0.0.1:39958...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.30 21:22:55 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\laksh\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.30 21:22:55 INFO  time: Connected to build server in 6.87s[0m
+[0m2021.10.30 21:22:55 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.10.30 21:23:01 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.10.30 21:23:04 INFO  time: code lens generation in 13s[0m
+[0m2021.10.30 21:23:04 INFO  time: Imported build in 0.41s[0m
+[0m2021.10.30 21:23:11 INFO  time: indexed workspace in 7.06s[0m
+[0m2021.10.30 21:23:11 INFO  compiling finagle-client (1 scala source)[0m
+[0m2021.10.30 21:23:16 INFO  no build target: using presentation compiler with only scala-library: 2.13.3[0m
+[0m2021.10.30 21:23:17 INFO  time: compiled finagle-client in 6s[0m
+[0m2021.10.30 21:32:57 INFO  time: code lens generation in 9.15s[0m
+[0m2021.10.30 21:32:57 INFO  time: code lens generation in 9.8s[0m
+[0m2021.10.30 21:32:57 INFO  time: code lens generation in 7.3s[0m
+Oct 30, 2021 9:33:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14
+[0m2021.10.30 21:38:38 INFO  shutting down Metals[0m
+[0m2021.10.30 21:38:38 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.10.30 21:38:38No more data in the server stdin, exiting... 
+INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...

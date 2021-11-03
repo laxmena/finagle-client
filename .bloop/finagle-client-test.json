@@ -1,0 +1,1069 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "finagle-client-test",
+        "directory": "D:\\Academics\\Semester2\\CS441\\Reference\\finagle-client",
+        "workspaceDir": "D:\\Academics\\Semester2\\CS441\\Reference\\finagle-client",
+        "sources": [
+            "D:\\Academics\\Semester2\\CS441\\Reference\\finagle-client\\src\\test\\scala",
+            "D:\\Academics\\Semester2\\CS441\\Reference\\finagle-client\\src\\test\\scala-2.13",
+            "D:\\Academics\\Semester2\\CS441\\Reference\\finagle-client\\src\\test\\scala-2",
+            "D:\\Academics\\Semester2\\CS441\\Reference\\finagle-client\\src\\test\\java",
+            "D:\\Academics\\Semester2\\CS441\\Reference\\finagle-client\\target\\scala-2.13\\src_managed\\test"
+        ],
+        "dependencies": [
+            "finagle-client"
+        ],
+        "classpath": [
+            "D:\\Academics\\Semester2\\CS441\\Reference\\finagle-client\\.bloop\\finagle-client\\scala-2.13\\classes",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.3\\scala-library-2.13.3.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.13\\1.1.2\\scala-parser-combinators_2.13-1.1.2.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-http_2.13\\21.9.0\\finagle-http_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-base-http_2.13\\21.9.0\\finagle-base-http_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-netty4-http_2.13\\21.9.0\\finagle-netty4-http_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-http2_2.13\\21.9.0\\finagle-http2_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-toggle_2.13\\21.9.0\\finagle-toggle_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_2.13\\2.4.4\\scala-collection-compat_2.13-2.4.4.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-codec_2.13\\21.9.0\\util-codec_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-logging_2.13\\21.9.0\\util-logging_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-tcnative-boringssl-static\\2.0.40.Final\\netty-tcnative-boringssl-static-2.0.40.Final.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-core_2.13\\21.9.0\\finagle-core_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-http\\4.1.66.Final\\netty-codec-http-4.1.66.Final.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-handler\\4.1.66.Final\\netty-handler-4.1.66.Final.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport\\4.1.66.Final\\netty-transport-4.1.66.Final.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-epoll\\4.1.66.Final\\netty-transport-native-epoll-4.1.66.Final-linux-x86_64.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-epoll\\4.1.66.Final\\netty-transport-native-epoll-4.1.66.Final-linux-aarch_64.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-unix-common\\4.1.66.Final\\netty-transport-native-unix-common-4.1.66.Final.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-handler-proxy\\4.1.66.Final\\netty-handler-proxy-4.1.66.Final.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-netty4_2.13\\21.9.0\\finagle-netty4_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-app_2.13\\21.9.0\\util-app_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-core_2.13\\21.9.0\\util-core_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-jvm_2.13\\21.9.0\\util-jvm_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-stats_2.13\\21.9.0\\util-stats_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-http2\\4.1.66.Final\\netty-codec-http2-4.1.66.Final.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-cache_2.13\\21.9.0\\util-cache_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.11.4\\jackson-core-2.11.4.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.11.4\\jackson-databind-2.11.4.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-scala_2.13\\2.11.4\\jackson-module-scala_2.13-2.11.4.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-init_2.13\\21.9.0\\finagle-init_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-hashing_2.13\\21.9.0\\util-hashing_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-lint_2.13\\21.9.0\\util-lint_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-registry_2.13\\21.9.0\\util-registry_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-routing_2.13\\21.9.0\\util-routing_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-security_2.13\\21.9.0\\util-security_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-tunable_2.13\\21.9.0\\util-tunable_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\ben-manes\\caffeine\\caffeine\\2.9.1\\caffeine-2.9.1.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hdrhistogram\\HdrHistogram\\2.1.11\\HdrHistogram-2.1.11.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\code\\findbugs\\jsr305\\2.0.1\\jsr305-2.0.1.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-common\\4.1.66.Final\\netty-common-4.1.66.Final.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-buffer\\4.1.66.Final\\netty-buffer-4.1.66.Final.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec\\4.1.66.Final\\netty-codec-4.1.66.Final.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-resolver\\4.1.66.Final\\netty-resolver-4.1.66.Final.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-socks\\4.1.66.Final\\netty-codec-socks-4.1.66.Final.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-app-lifecycle_2.13\\21.9.0\\util-app-lifecycle_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-function_2.13\\21.9.0\\util-function_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.13.3\\scala-reflect-2.13.3.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.11.4\\jackson-annotations-2.11.4.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-paranamer\\2.11.4\\jackson-module-paranamer-2.11.4.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-slf4j-api_2.13\\21.9.0\\util-slf4j-api_2.13-21.9.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\checkerframework\\checker-qual\\3.10.0\\checker-qual-3.10.0.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\errorprone\\error_prone_annotations\\2.5.1\\error_prone_annotations-2.5.1.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\thoughtworks\\paranamer\\paranamer\\2.8\\paranamer-2.8.jar",
+            "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\slf4j-api\\1.7.30\\slf4j-api-1.7.30.jar"
+        ],
+        "out": "D:\\Academics\\Semester2\\CS441\\Reference\\finagle-client\\.bloop\\finagle-client",
+        "classesDir": "D:\\Academics\\Semester2\\CS441\\Reference\\finagle-client\\.bloop\\finagle-client\\scala-2.13\\test-classes",
+        "resources": [
+            "D:\\Academics\\Semester2\\CS441\\Reference\\finagle-client\\src\\test\\resources",
+            "D:\\Academics\\Semester2\\CS441\\Reference\\finagle-client\\target\\scala-2.13\\resource_managed\\test"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.13.3",
+            "options": [
+                
+            ],
+            "jars": [
+                "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.3\\scala-library-2.13.3.jar",
+                "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-compiler\\2.13.3\\scala-compiler-2.13.3.jar",
+                "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.13.3\\scala-reflect-2.13.3.jar",
+                "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jline\\jline\\3.15.0\\jline-3.15.0.jar",
+                "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\net\\java\\dev\\jna\\jna\\5.3.1\\jna-5.3.1.jar"
+            ],
+            "analysis": "D:\\Academics\\Semester2\\CS441\\Reference\\finagle-client\\target\\streams\\test\\bloopAnalysisOut\\_global\\streams\\inc_compile_2.13.zip",
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "C:\\Program Files\\Java\\jdk-11.0.12",
+                "options": [
+                    "-Duser.dir=D:\\Academics\\Semester2\\CS441\\Reference\\finagle-client"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.3\\scala-library-2.13.3.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.3\\scala-library-2.13.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-parser-combinators_2.13",
+                    "version": "1.1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-parser-combinators_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.13\\1.1.2\\scala-parser-combinators_2.13-1.1.2.jar"
+                        },
+                        {
+                            "name": "scala-parser-combinators_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.13\\1.1.2\\scala-parser-combinators_2.13-1.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "finagle-http_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "finagle-http_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-http_2.13\\21.9.0\\finagle-http_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "finagle-http_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-http_2.13\\21.9.0\\finagle-http_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "finagle-base-http_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "finagle-base-http_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-base-http_2.13\\21.9.0\\finagle-base-http_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "finagle-base-http_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-base-http_2.13\\21.9.0\\finagle-base-http_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "finagle-netty4-http_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "finagle-netty4-http_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-netty4-http_2.13\\21.9.0\\finagle-netty4-http_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "finagle-netty4-http_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-netty4-http_2.13\\21.9.0\\finagle-netty4-http_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "finagle-http2_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "finagle-http2_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-http2_2.13\\21.9.0\\finagle-http2_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "finagle-http2_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-http2_2.13\\21.9.0\\finagle-http2_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "finagle-toggle_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "finagle-toggle_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-toggle_2.13\\21.9.0\\finagle-toggle_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "finagle-toggle_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-toggle_2.13\\21.9.0\\finagle-toggle_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-collection-compat_2.13",
+                    "version": "2.4.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-collection-compat_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_2.13\\2.4.4\\scala-collection-compat_2.13-2.4.4.jar"
+                        },
+                        {
+                            "name": "scala-collection-compat_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_2.13\\2.4.4\\scala-collection-compat_2.13-2.4.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "util-codec_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "util-codec_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-codec_2.13\\21.9.0\\util-codec_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "util-codec_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-codec_2.13\\21.9.0\\util-codec_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "util-logging_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "util-logging_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-logging_2.13\\21.9.0\\util-logging_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "util-logging_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-logging_2.13\\21.9.0\\util-logging_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-tcnative-boringssl-static",
+                    "version": "2.0.40.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-tcnative-boringssl-static",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-tcnative-boringssl-static\\2.0.40.Final\\netty-tcnative-boringssl-static-2.0.40.Final.jar"
+                        },
+                        {
+                            "name": "netty-tcnative-boringssl-static",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-tcnative-boringssl-static\\2.0.40.Final\\netty-tcnative-boringssl-static-2.0.40.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "finagle-core_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "finagle-core_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-core_2.13\\21.9.0\\finagle-core_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "finagle-core_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-core_2.13\\21.9.0\\finagle-core_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-http",
+                    "version": "4.1.66.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-http",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-http\\4.1.66.Final\\netty-codec-http-4.1.66.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-http",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-http\\4.1.66.Final\\netty-codec-http-4.1.66.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-handler",
+                    "version": "4.1.66.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-handler",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-handler\\4.1.66.Final\\netty-handler-4.1.66.Final.jar"
+                        },
+                        {
+                            "name": "netty-handler",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-handler\\4.1.66.Final\\netty-handler-4.1.66.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport",
+                    "version": "4.1.66.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport\\4.1.66.Final\\netty-transport-4.1.66.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport\\4.1.66.Final\\netty-transport-4.1.66.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-native-unix-common",
+                    "version": "4.1.66.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-native-unix-common",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-unix-common\\4.1.66.Final\\netty-transport-native-unix-common-4.1.66.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport-native-unix-common",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-unix-common\\4.1.66.Final\\netty-transport-native-unix-common-4.1.66.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-handler-proxy",
+                    "version": "4.1.66.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-handler-proxy",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-handler-proxy\\4.1.66.Final\\netty-handler-proxy-4.1.66.Final.jar"
+                        },
+                        {
+                            "name": "netty-handler-proxy",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-handler-proxy\\4.1.66.Final\\netty-handler-proxy-4.1.66.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "finagle-netty4_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "finagle-netty4_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-netty4_2.13\\21.9.0\\finagle-netty4_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "finagle-netty4_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-netty4_2.13\\21.9.0\\finagle-netty4_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "util-app_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "util-app_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-app_2.13\\21.9.0\\util-app_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "util-app_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-app_2.13\\21.9.0\\util-app_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "util-core_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "util-core_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-core_2.13\\21.9.0\\util-core_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "util-core_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-core_2.13\\21.9.0\\util-core_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "util-jvm_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "util-jvm_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-jvm_2.13\\21.9.0\\util-jvm_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "util-jvm_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-jvm_2.13\\21.9.0\\util-jvm_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "util-stats_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "util-stats_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-stats_2.13\\21.9.0\\util-stats_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "util-stats_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-stats_2.13\\21.9.0\\util-stats_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-http2",
+                    "version": "4.1.66.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-http2",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-http2\\4.1.66.Final\\netty-codec-http2-4.1.66.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-http2",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-http2\\4.1.66.Final\\netty-codec-http2-4.1.66.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "util-cache_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "util-cache_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-cache_2.13\\21.9.0\\util-cache_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "util-cache_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-cache_2.13\\21.9.0\\util-cache_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-core",
+                    "version": "2.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.11.4\\jackson-core-2.11.4.jar"
+                        },
+                        {
+                            "name": "jackson-core",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.11.4\\jackson-core-2.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-databind",
+                    "version": "2.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-databind",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.11.4\\jackson-databind-2.11.4.jar"
+                        },
+                        {
+                            "name": "jackson-databind",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.11.4\\jackson-databind-2.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.module",
+                    "name": "jackson-module-scala_2.13",
+                    "version": "2.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-module-scala_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-scala_2.13\\2.11.4\\jackson-module-scala_2.13-2.11.4.jar"
+                        },
+                        {
+                            "name": "jackson-module-scala_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-scala_2.13\\2.11.4\\jackson-module-scala_2.13-2.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "finagle-init_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "finagle-init_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-init_2.13\\21.9.0\\finagle-init_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "finagle-init_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\finagle-init_2.13\\21.9.0\\finagle-init_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "util-hashing_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "util-hashing_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-hashing_2.13\\21.9.0\\util-hashing_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "util-hashing_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-hashing_2.13\\21.9.0\\util-hashing_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "util-lint_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "util-lint_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-lint_2.13\\21.9.0\\util-lint_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "util-lint_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-lint_2.13\\21.9.0\\util-lint_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "util-registry_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "util-registry_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-registry_2.13\\21.9.0\\util-registry_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "util-registry_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-registry_2.13\\21.9.0\\util-registry_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "util-routing_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "util-routing_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-routing_2.13\\21.9.0\\util-routing_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "util-routing_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-routing_2.13\\21.9.0\\util-routing_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "util-security_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "util-security_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-security_2.13\\21.9.0\\util-security_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "util-security_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-security_2.13\\21.9.0\\util-security_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "util-tunable_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "util-tunable_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-tunable_2.13\\21.9.0\\util-tunable_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "util-tunable_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-tunable_2.13\\21.9.0\\util-tunable_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.ben-manes.caffeine",
+                    "name": "caffeine",
+                    "version": "2.9.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "caffeine",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\ben-manes\\caffeine\\caffeine\\2.9.1\\caffeine-2.9.1.jar"
+                        },
+                        {
+                            "name": "caffeine",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\ben-manes\\caffeine\\caffeine\\2.9.1\\caffeine-2.9.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.hdrhistogram",
+                    "name": "HdrHistogram",
+                    "version": "2.1.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "HdrHistogram",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hdrhistogram\\HdrHistogram\\2.1.11\\HdrHistogram-2.1.11.jar"
+                        },
+                        {
+                            "name": "HdrHistogram",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hdrhistogram\\HdrHistogram\\2.1.11\\HdrHistogram-2.1.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "2.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\code\\findbugs\\jsr305\\2.0.1\\jsr305-2.0.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-common",
+                    "version": "4.1.66.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-common",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-common\\4.1.66.Final\\netty-common-4.1.66.Final.jar"
+                        },
+                        {
+                            "name": "netty-common",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-common\\4.1.66.Final\\netty-common-4.1.66.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-buffer",
+                    "version": "4.1.66.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-buffer",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-buffer\\4.1.66.Final\\netty-buffer-4.1.66.Final.jar"
+                        },
+                        {
+                            "name": "netty-buffer",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-buffer\\4.1.66.Final\\netty-buffer-4.1.66.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec",
+                    "version": "4.1.66.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec\\4.1.66.Final\\netty-codec-4.1.66.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec\\4.1.66.Final\\netty-codec-4.1.66.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver",
+                    "version": "4.1.66.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-resolver\\4.1.66.Final\\netty-resolver-4.1.66.Final.jar"
+                        },
+                        {
+                            "name": "netty-resolver",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-resolver\\4.1.66.Final\\netty-resolver-4.1.66.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-socks",
+                    "version": "4.1.66.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-socks",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-socks\\4.1.66.Final\\netty-codec-socks-4.1.66.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-socks",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-socks\\4.1.66.Final\\netty-codec-socks-4.1.66.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "util-app-lifecycle_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "util-app-lifecycle_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-app-lifecycle_2.13\\21.9.0\\util-app-lifecycle_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "util-app-lifecycle_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-app-lifecycle_2.13\\21.9.0\\util-app-lifecycle_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "util-function_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "util-function_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-function_2.13\\21.9.0\\util-function_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "util-function_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-function_2.13\\21.9.0\\util-function_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.13.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.13.3\\scala-reflect-2.13.3.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.13.3\\scala-reflect-2.13.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-annotations",
+                    "version": "2.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-annotations",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.11.4\\jackson-annotations-2.11.4.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.11.4\\jackson-annotations-2.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.module",
+                    "name": "jackson-module-paranamer",
+                    "version": "2.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-module-paranamer",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-paranamer\\2.11.4\\jackson-module-paranamer-2.11.4.jar"
+                        },
+                        {
+                            "name": "jackson-module-paranamer",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\module\\jackson-module-paranamer\\2.11.4\\jackson-module-paranamer-2.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "util-slf4j-api_2.13",
+                    "version": "21.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "util-slf4j-api_2.13",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-slf4j-api_2.13\\21.9.0\\util-slf4j-api_2.13-21.9.0.jar"
+                        },
+                        {
+                            "name": "util-slf4j-api_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\twitter\\util-slf4j-api_2.13\\21.9.0\\util-slf4j-api_2.13-21.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.checkerframework",
+                    "name": "checker-qual",
+                    "version": "3.10.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "checker-qual",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\checkerframework\\checker-qual\\3.10.0\\checker-qual-3.10.0.jar"
+                        },
+                        {
+                            "name": "checker-qual",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\checkerframework\\checker-qual\\3.10.0\\checker-qual-3.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.errorprone",
+                    "name": "error_prone_annotations",
+                    "version": "2.5.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "error_prone_annotations",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\errorprone\\error_prone_annotations\\2.5.1\\error_prone_annotations-2.5.1.jar"
+                        },
+                        {
+                            "name": "error_prone_annotations",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\errorprone\\error_prone_annotations\\2.5.1\\error_prone_annotations-2.5.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.thoughtworks.paranamer",
+                    "name": "paranamer",
+                    "version": "2.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "paranamer",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\thoughtworks\\paranamer\\paranamer\\2.8\\paranamer-2.8.jar"
+                        },
+                        {
+                            "name": "paranamer",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\thoughtworks\\paranamer\\paranamer\\2.8\\paranamer-2.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "1.7.30",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\slf4j-api\\1.7.30\\slf4j-api-1.7.30.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\slf4j-api\\1.7.30\\slf4j-api-1.7.30-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.3",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.3\\scala-library-2.13.3.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\laksh\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.3\\scala-library-2.13.3-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}
