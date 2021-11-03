@@ -24,7 +24,7 @@ import com.twitter.util.{Await, Future}
  * - Prints the response
  *
  * How to run:
- * sbt "run-main com.laxmena.FinagleClient [date] [time] [window]"
+ * sbt "run [date] [time] [window]"
  *
  * @author Laxmena
  */
