@@ -2,6 +2,8 @@
 
 This project is an implementation of Twitter's Finagle to trigger AWS Lambda with REST API through AWS API Gateway.
 
+Find AWS Lambda with gRPC Implementation here: [AWS-Lambda-with-gRPC](https://github.com/laxmena/AWS-Lambda-with-gRPC).
+
 - Author: [Lakshmanan Meiyappan](https://laxmena.com)
 - NetID: [lmeiya2@uic.edu](mailto:lmeiya2@uic.edu)
 
@@ -15,6 +17,7 @@ Steps to install the project:
 2. Install the dependencies using `sbt`
     ```shell
     sbt clean compile assembly
+    sbt test
     ```
 3. Run the project using `sbt run`
     ```shell
@@ -35,6 +38,9 @@ Example: `sbt "run 2021-11-02 1:30:45 1"`
 Language: Scala | Framework: Finagle
 
 ### AWS Lambda Function
+
+Find more about Lambda Functions and check the source code here: [LambdaCode](https://github.com/laxmena/AWS-Lambda-with-gRPC/tree/master/LambdaCode)
+
 1. Supports the following HTTP methods: GET, POST
 2. Supports the following HTTP headers:
     - `Content-Type`: `application/json`
@@ -69,10 +75,17 @@ AWS Lambda function can also be triggered using Postman. Please find the screens
 
 
 ## Rest Client Workflow Diagram
-![REST Client Workflow](./assets/workflow.png)
+![REST Client Workflow](assets/workflow.png)
 
 ## Demo Video
+
+### Finagle Client Demo:
+
 [![Twitter Finagle AWS Lambda Video Demo](https://img.youtube.com/vi/Q9qGOaLRnCk/0.jpg)](https://youtu.be/Q9qGOaLRnCk)
+
+### Lambda Code Walkthrough:
+
+[![Twitter Finagle AWS Lambda Video Demo](https://img.youtube.com/vi/5hdhwfg5ytQ/0.jpg)](https://youtu.be/5hdhwfg5ytQ)
 
 ## References
 1. Twitter Finagle Guide: [https://twitter.github.io/finagle/](https://twitter.github.io/finagle/)
