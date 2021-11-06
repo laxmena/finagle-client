@@ -30,4 +30,6 @@ object Constants {
   val INVALID_WINDOW_MESSAGE = "Window should be between 1 and 60"
   val NO_LOG_MESSAGE = "No logs found found for given parameters"
   val LOG_FOUND_MESSAGE = "Logs found for given parameters"
+
+  val CONFIG = "finagle_config"
 }
